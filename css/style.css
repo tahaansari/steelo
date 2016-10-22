@@ -1,3 +1,5 @@
+
+
 .bg-primary{
 
 	background: #00afef;
@@ -6,6 +8,7 @@
 html, body {
 
     /*overflow-y: hidden;*/
+    /*font-family: montserratregular!important;*/
 }
 
 footer {
@@ -23,6 +26,11 @@ footer {
 	/*padding: 10px 20px;*/
 }
 
+
+.nav{
+
+    padding-right: 20%;
+}
 /*
 Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
@@ -265,6 +273,8 @@ Image credits: unsplash.com
 #products{
 
     position: relative;
+    -webkit-transition: 2s;
+    /*width: 5000px;*/
 }
 
 .products{
@@ -280,6 +290,7 @@ Image credits: unsplash.com
 .navbar-brand {
     padding:0;
 }
+
 
 
 .small-products{
@@ -589,4 +600,186 @@ section {
     text-align: center;
     margin-top: 150px;
     font-weight: bold;
+}
+
+
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+/*.more-products-list{
+
+    display: none;
+}*/
+
+
+.more-products{
+    
+    cursor: pointer;
+}
+
+    
+#more-products{
+
+    display: none;
+}
+
+.accordion-group{
+
+    background-color: #fbfbfb;
+}
+
+.accordion-body {
+        padding: 0px 15px;
+}
+.accordion-inner p{
+
+    padding: 5px;
+
+}
+
+
+.accordion-heading:hover{
+
+    cursor: pointer;
+
+}
+
+.accordion-inner,.accordion-toggle p:hover{
+
+    cursor: pointer;
+    
+}
+.collapse.in {
+    display: block;
+    /*padding: 5px 20px;*/
+}
+
+.accordion-heading{
+
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+a:focus, a:hover {
+
+    color: #00aff3;
+    text-decoration: none;
+}
+
+a{
+    color: #00aff3;
+}
+
+.thumbnails{
+
+        padding: 10px;
+    /*border: 1px solid black;*/
+}
+
+.thumbnails{
+
+    cursor: pointer;
+    /*border: 1px solid black;*/
+}
+
+.product-image{
+        -webkit-transform: rotate(7deg);
+    transform: rotate(19deg);
+    padding: 10px;
+}
+.scaling{
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
+
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f078";    
+    float: right;
+}
+.accordion-opened .accordion-toggle:after {    
+    content: "\f054";    
+}
+
+
+
+
+@media (max-width: 768px) { 
+
+    .pad-100 {
+    padding: 0 20px;
+}
+
+    #bs-example-navbar-collapse-1{
+
+        border:none;
+    }
+    #mainNav {
+    padding: 8px;
+}
+
+.nav {
+    padding-right: 0;
+}
+
+    #products{
+        display: none;
+    }
+
+
+    #more-product{
+        display: none;
+
+    }
+
 }
