@@ -137,24 +137,34 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4 {
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .fade-carousel .slides .slide-1 {
-  background-image: url(../img/bg1.png); 
-  background-size: 70%;
-  background-position: left;
-      margin-left: 10%;
+  background: url(../img/bg1.png) no-repeat center center; 
 }
+
+
 .fade-carousel .slides .slide-2 {
-  background-image: url(../img/bg2.png);
-  background-size: 30%;
-  background-position: left;
-      margin-left: 10%;
+  background: url(../img/bg2.png) no-repeat center center;
 }
+
+.fade-carousel .slides .slide-3 {
+  background: url(../img/bg3.png) no-repeat center center;
+}
+
+.fade-carousel .slides .slide-4 {
+  background: url(../img/bg4.png) no-repeat center center;
+}
+
+/*.fade-carousel .slides .slide-4 {
+  background: url(../img/bg4.png) no-repeat center center;
+}*/
 /*.fade-carousel .slides .slide-3 {
   background-image: url(../img/bg1.png);
   background-size: 70%;
@@ -682,17 +692,18 @@ section {
 
 .accordion-heading{
 
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgb(0, 170, 242);
     padding: 10px;
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 900;
+        border-bottom: 5px solid black;
 }
 
 
 a:focus, a:hover {
 
-    color: #00aff3;
+    color: white;
     text-decoration: none;
 }
 
@@ -751,10 +762,34 @@ a{
     content: "\f054";    
 }
 
+.row .col-md-3{
+    /*border:1px solid black;*/
+}
 
 
+@media (max-width: 768px) {
 
-@media (max-width: 768px) { 
+     .beginning-hover-img{
+
+        padding: 5%;
+     }
+
+    p{
+        font-size:12px;
+    }
+
+.beggning-pad{
+
+    padding-left: 17%;
+} 
+
+    section.download h2 {
+    margin-left: 15%;
+}
+
+.half-dash {
+   margin-left: 15%;
+}
 
     .pad-100 {
     padding: 0 20px;
